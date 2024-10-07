@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto Next.js com Fastify e Swagger
 
-## Getting Started
 
-First, run the development server:
+## Front-Todo-NextJS
+
+Este é o front-end de uma aplicação de tarefas (To-Do) desenvolvida com Next.js. O projeto está integrado com um back-end construído em Fastify, que pode ser encontrado neste repositório. A aplicação utiliza React Hook Form para gerenciamento de formulários, Radix UI para componentes acessíveis, e TailwindCSS para o estilo.
+
+### Tecnologias Utilizadas
+
+- Next.js 14
+- React 18
+- TypeScript 5
+- TailwindCSS 3.4
+- React Hook Form
+- Radix UI
+- Zod (para validação de esquemas)
+
+Este é um projeto [Next.js](https://nextjs.org) criado com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) e integrado com um backend Fastify documentado com Swagger. O backend pode ser encontrado [aqui](https://github.com/Anderson-Dias-Farias/fastify-swagger-api).
+
+## Começando
+
+### Frontend
+
+Para iniciar o servidor de desenvolvimento do frontend:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página modificando `app/page.tsx`. A página atualiza automaticamente conforme você edita o arquivo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este projeto utiliza [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para otimizar e carregar automaticamente a fonte [Geist](https://vercel.com/font), uma nova família de fontes para a Vercel.
 
-## Learn More
+### Backend
 
-To learn more about Next.js, take a look at the following resources:
+O backend deste projeto é uma aplicação de servidor utilizando Fastify e Swagger para documentação de API. Ele inclui rotas para operações CRUD em tarefas e um banco de dados rodando no Docker.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para mais detalhes sobre como configurar e executar o backend, consulte o [repositório do backend](https://github.com/Anderson-Dias-Farias/fastify-swagger-api).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estrutura do Projeto
 
-## Deploy on Vercel
+- `/pages`: Contém as páginas da aplicação Next.js.
+- `/components`: Componentes reutilizáveis de UI.
+- `/interfaces`: Interfaces para validação de dados.
+- `/hooks`: Funções para gerenciamento de estados e requisições.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Formulários**: Gestão de formulários com React Hook Form e validações com Zod.
+- **UI Acessível**: Utiliza Radix UI para fornecer componentes acessíveis e personalizáveis.
+- **Estilização com TailwindCSS**: Layout moderno e responsivo usando Tailwind.
+- **Autenticação**: Integração com o back-end para rotas protegidas, incluindo criação, listagem, atualização e exclusão de tarefas.
+
+## Contribuição
+
+Se você quiser contribuir para este projeto:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Faça commit das suas alterações (`git commit -m 'Adiciona nova feature'`).
+4. Faça o push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
